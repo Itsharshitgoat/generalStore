@@ -148,7 +148,7 @@ You can give Claude Desktop direct access to your local knowledge base by adding
 {
   "mcpServers": {
     "generalStore": {
-      "command": "/absolute/path/to/generalStore/venv/bin/generalstore",
+      "command": "/Users/xlr-01/generalStore/venv/bin/generalstore",
       "args": ["serve"]
     }
   }

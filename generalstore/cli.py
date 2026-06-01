@@ -301,6 +301,7 @@ def serve():
         level=logging.INFO,
         format="%(asctime)s [%(name)s] %(message)s",
         stream=sys.stderr,
+        force=True,
     )
     logging.getLogger("chromadb").setLevel(logging.WARNING)
     logging.getLogger("sentence_transformers").setLevel(logging.WARNING)

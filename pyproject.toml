@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "generalstore"
+version = "1.0.0"
+description = "The Local Knowledge Engine — index your study materials, query with AI"
+requires-python = ">=3.11"
+dependencies = [
+    "chromadb>=1.0.0",
+    "sentence-transformers>=3.0.0",
+    "fastmcp>=2.0.0",
+    "watchdog>=4.0.0",
+    "python-docx>=1.1.0",
+    "python-pptx>=1.0.0",
+    "pandas>=2.2.0",
+    "openpyxl>=3.1.0",
+    "PyMuPDF>=1.24.0",
+    "click>=8.1.0",
+    "rich>=13.7.0",
+    "pydantic>=2.7.0",
+    "pydantic-settings>=2.3.0",
+    "python-dotenv>=1.0.0",
+    "anyio>=4.4.0",
+]
+
+[project.scripts]
+generalstore = "generalstore.cli:cli"
+
+[tool.setuptools.packages.find]
+include = ["generalstore*"]

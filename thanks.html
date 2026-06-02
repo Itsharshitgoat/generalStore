@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W8JMZRFRVZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W8JMZRFRVZ');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/9078/9078251.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Helvetica+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        'sm': '640px',
+                        'md': '768px',
+                        'lg': '1024px',
+                        'xl': '1280px',
+                        '2xl': '1536px'
+                    },
+                    colors: {
+                        primary: '#0047AB',
+                        secondary: '#FFD700'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    },
+                    boxShadow: {
+                        'card': '0 8px 24px rgba(0,0,0,0.15)',
+                        'button': '0 4px 12px rgba(0,0,0,0.1)'
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            -webkit-tap-highlight-color: transparent;
+        }
+        body {
+            background: url('https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/12/Gradient_builder_2.jpg?auto=format&q=60&w=1815&h=1020.9375&fit=crop&crop=faces') no-repeat center center fixed;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+        .font-helvetica {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        .font-inter {
+            font-family: "Inter", sans-serif;
+        }
+        .font-mono {
+            font-family: "Roboto Mono", monospace;
+        }
+        .club-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            backdrop-filter: blur(8px);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background: linear-gradient(135deg, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
+            backdrop-filter: blur(10px);
+            padding: 24px;
+            border: 1px solid rgba(255,255,255,0.2);
+            width: 90%;
+            max-width: 600px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            position: relative;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .modal-close {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 24px;
+            color: #333;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .modal-close:hover {
+            color: #0047AB;
+        }
+        .modal-content h3 {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 16px;
+            color: #333;
+        }
+        .modal-content p {
+            font-family: "Inter", sans-serif;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        .share-button, .download-button {
+            background: #0047AB;
+            transition: background 0.3s ease;
+        }
+        .share-button:hover, .download-button:hover {
+            background: #003585;
+        }
+        .back-home-button {
+            background: #0047AB;
+            transition: background 0.3s ease;
+        }
+        .back-home-button:hover {
+            background: #003585;
+        }
+        #vip-title {
+            background: linear-gradient(to right, rgba(79, 153, 223, 0.9), rgba(155, 65, 219, 0.9), rgba(128, 97, 129, 0.9));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
+        }
+        @media (max-width: 768px) {
+            button {
+                min-height: 44px;
+                min-width: 44px;
+                padding: 12px;
+            }
+            .modal-content {
+                width: 95%;
+                padding: 16px;
+            }
+            .modal-content h3 {
+                font-size: 1.25rem;
+            }
+            .club-card {
+                padding: 16px;
+            }
+        }
+    </style>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script>
+        // Generate random Member ID
+        function generateMemberID() {
+            return 'VIP-' + Math.floor(100000 + Math.random() * 900000);
+        }
+        // Set Member ID on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const memberIdElement = document.getElementById('member-id');
+            if (memberIdElement) {
+                memberIdElement.textContent = generateMemberID();
+            }
+        });
+        // Modal Functions
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+        // Share Functions
+        function shareOnX() {
+            const memberId = document.getElementById('member-id').textContent;
+            const text = `Just became a VIP member with ID ${memberId}! Excited to join the exclusive club! 🎉 #VIPClub`;
+            const url = `https://x.com/intent/tweet?text=${encodeURIComponent(text)}`;
+            window.open(url, '_blank');
+        }
+        function shareOnInstagram() {
+            alert('To share on Instagram Stories, download the VIP card using the Download button and upload it to your Instagram Story!');
+        }
+        function shareOnReddit() {
+            const memberId = document.getElementById('member-id').textContent;
+            const title = `I’m a VIP Member! ID: ${memberId}`;
+            const text = `Just joined an exclusive VIP club with my unique Member ID: ${memberId}. Excited for what’s next! 🎉`;
+            const url = `https://www.reddit.com/submit?title=${encodeURIComponent(title)}&text=${encodeURIComponent(text)}`;
+            window.open(url, '_blank');
+        }
+        // Download Card as PNG
+        function downloadCard() {
+            const card = document.querySelector('.club-card');
+            html2canvas(card, { backgroundColor: null, scale: 2 }).then(canvas => {
+                const link = document.createElement('a');
+                link.href = canvas.toDataURL('image/png');
+                link.download = 'vip.png';
+                link.click();
+            });
+        }
+    </script>
+</head>
+<body class="bg-[#F5F5F5] text-[#333333]">
+    <div class="min-h-screen flex items-center justify-center px-4">
+        <div class="club-card rounded-3xl shadow-card p-8 max-w-md w-full text-center border border-white/20">
+            <div class="flex items-center justify-center gap-3 mb-12">
+                <i class="ri-vip-crown-line text-3xl text-primary"></i>
+                <h1 class="font-helvetica text-4xl font-bold" id="vip-title">Welcome To Club</h1>
+            </div>
+            <p class="font-inter text-gray-600 text-sm mb-4">You’re now an exclusive member of our inner circle. Your message has been received with gratitude!</p>
+            <div class="bg-white/60 rounded-lg p-4 mb-6">
+                <p class="font-inter text-sm text-gray-600">Member ID</p>
+                <p id="member-id" class="font-mono text-lg text-primary">VIP-XXXXXX</p>
+            </div>
+            <p class="font-inter text-gray-600 text-sm mb-6">We’ll connect with you soon to explore how we can create something extraordinary together.</p>
+            <div class="flex justify-center gap-4">
+                <button onclick="openModal('share-modal')" class="share-button w-12 h-12 rounded-full flex items-center justify-center shadow-button" title="Share VIP Card">
+                    <i class="ri-share-line text-xl text-white"></i>
+                </button>
+                <button onclick="window.location.href='index.html'" class="back-home-button px-6 py-3 rounded-full font-medium text-white flex items-center justify-center shadow-button" title="Back to Home">
+                    Back to Home
+                </button>
+                <button onclick="downloadCard()" class="download-button w-12 h-12 rounded-full flex items-center justify-center shadow-md" title="Download VIP Card">
+                    <i class="ri-download-line text-xl text-white"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="share-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('share-modal')">×</span>
+            <h3>Share Your VIP Status</h3>
+            <p>Show off your exclusive membership on your favorite platforms!</p>
+            <div class="flex justify-center gap-4">
+                <button onclick="shareOnX()" class="bg-gray-800 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+                    <i class="ri-twitter-x-line text-xl"></i>
+                </button>
+                <button onclick="shareOnInstagram()" class="bg-gray-800 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+                    <i class="ri-instagram-line text-xl"></i>
+                </button>
+                <button onclick="shareOnReddit()" class="bg-gray-800 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+                    <i class="ri-reddit-line text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

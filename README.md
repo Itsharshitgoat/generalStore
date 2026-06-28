@@ -2,16 +2,6 @@
 
 **generalStore** is a completely local Knowledge Engine that indexes all your messy study materials and connects them directly to Claude Desktop so you can chat with your own files, for free, with zero upload limits.
 
----
-
-## 📖 The Origin Story (Why I Built This)
-
-The only reason why I built `generalStore` is because this semester, my professors sent me almost **119 different files**—a chaotic mix of PDFs, PowerPoints, Word docs, and Excel sheets. I just scraped by this semester, and honestly, trying to manually read and organize all of them the night before an exam was both frustrating and incredibly boring.
-
-I needed a way to instantly find answers hidden deep within gigabytes of local files without manually opening each one, and without paying for expensive cloud storage or hitting upload limits on AI chatbots. Thus, `generalStore` was born.
-
----
-
 ## ⚙️ How It Works (High-Level Overview)
 
 The system begins by scanning and processing all of your local documents. Using a local AI embedding model (`sentence-transformers`), it transforms the extracted text into numerical representations (embeddings), which are then stored securely in a local **ChromaDB vector database**. 

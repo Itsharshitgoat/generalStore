@@ -1,4 +1,4 @@
-# generalStore — Made with ♥️  by Harshit
+# generalStore — Made by Harshit
 
 **generalStore** is a completely local Knowledge Engine that indexes all your messy study materials and connects them directly to Claude Desktop so you can chat with your own files, for free, with zero upload limits.
 
